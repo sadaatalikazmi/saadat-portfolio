@@ -1,15 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import myImg from "../../Assets/avatar.svg";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Container, Row, Col } from "react-bootstrap";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
 
-function Home2() {
+const Introduction = () => {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -67,27 +63,17 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="mailto:saadat.ali.pro@gmail.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
-                  <AiFillGithub />
+                  <AiFillMail />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/saadatali1/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +83,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://github.com/sadaatalikazmi"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  className="icon-colour  home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiFillGithub />
                 </a>
               </li>
             </ul>
@@ -111,5 +97,6 @@ function Home2() {
       </Container>
     </Container>
   );
-}
-export default Home2;
+};
+
+export default Introduction;

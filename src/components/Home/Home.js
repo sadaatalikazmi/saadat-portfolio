@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
+import Particle from "../Particle";
+import Introduction from "./Introduction";
+import homeLogo from "../../Assets/home-main.svg";
+import { Container, Row, Col } from "react-bootstrap";
 
-function Home() {
+const Home = () => {
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -21,8 +21,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                I'M <strong className="main-name">SYED SAADAT ALI KAZMI</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -41,9 +40,9 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Introduction />
     </section>
   );
-}
+};
 
 export default Home;
