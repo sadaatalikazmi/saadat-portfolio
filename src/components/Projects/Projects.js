@@ -18,11 +18,9 @@ const Projects = () => {
             <Col md={4} className="project-card">
               <ProjectCard
                 imagePath={project.imagePath}
-                isBlog={project.isBlog}
                 title={project.title}
                 description={project.description}
-                demoLink={project.demoLink}
-                githubLink={project.githubLink}
+                link={project.url}
               />
             </Col>
           ))}

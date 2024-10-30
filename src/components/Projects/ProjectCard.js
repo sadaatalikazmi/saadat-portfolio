@@ -1,10 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 import Button from "react-bootstrap/Button";
 
-const ProjectCard = ({ imagePath, isBlog, title, description, demoLink, githubLink }) => {
+const ProjectCard = ({ imagePath, title, description, link }) => {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={imagePath} alt="card-img" />
@@ -13,20 +12,12 @@ const ProjectCard = ({ imagePath, isBlog, title, description, demoLink, githubLi
         <Card.Text style={{ textAlign: "justify" }}>
           {description}
         </Card.Text>
-        {!isBlog && githubLink != "" && (
-          <Button variant="primary" href={githubLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {isBlog ? "Blog" : "GitHub"}
-          </Button>
-        )}
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-        {!isBlog && demoLink && (
+        {link && link !== "" && (
           <Button
             variant="primary"
-            href={demoLink}
+            href={link}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
