@@ -1,5 +1,4 @@
 import Nav from "react-bootstrap/Nav";
-import logo from "../Assets/logo.png";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -32,7 +31,6 @@ const NavBar = () => {
     >
       <Container>
         <Navbar.Brand href="/" className="portfolio-logo d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
           SSAK
         </Navbar.Brand>
         <Navbar.Toggle
@@ -52,7 +50,6 @@ const NavBar = () => {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -62,7 +59,6 @@ const NavBar = () => {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -75,7 +71,6 @@ const NavBar = () => {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -85,7 +80,6 @@ const NavBar = () => {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/sadaatalikazmi/saadat-portfolio"

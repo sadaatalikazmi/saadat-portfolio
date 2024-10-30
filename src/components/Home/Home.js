@@ -2,7 +2,7 @@ import React from "react";
 import Type from "./Type";
 import Particle from "../Particle";
 import Introduction from "./Introduction";
-import homeLogo from "../../Assets/home-main.svg";
+import hiThereImage from "../../Assets/hi_there.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Home = () => {
@@ -19,19 +19,16 @@ const Home = () => {
                   👋🏻
                 </span>
               </h1>
-
               <h1 className="heading-name">
                 I'M <strong className="main-name">SYED SAADAT ALI KAZMI</strong>
               </h1>
-
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
-
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={hiThereImage}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}

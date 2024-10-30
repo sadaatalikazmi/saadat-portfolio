@@ -8,25 +8,25 @@ const AboutCard = () => {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Syed Saadat Ali Kazmi </span>
-            from <span className="purple"> Richmond, TX, USA.</span>
+            Hi Everyone, I am <b className="teal">Syed Saadat Ali Kazmi </b>
+            from <b className="teal"> Richmond, TX, USA.</b>
             <br />
-            I am currently employed as a software developer at TRC Companies – Midland TX.
+            I am currently employed as a software developer at <b className="teal">TRC Companies – Midland TX</b>.
             <br />
-            I have completed Bachelor's in Computer Science at NUST, Islamabad.
+            I have completed Bachelor's in Computer Science at <b className="teal">NUST, Islamabad</b>.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight className="teal" /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight className="teal" /> Travelling
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight className="teal" /> Cricket
             </li>
           </ul>
         </blockquote>
