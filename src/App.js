@@ -1,8 +1,8 @@
 import Home from './views/Home';
 import About from './views/About';
+import './assets/styles/styles.css';
 import Resume from './views/Resume';
 import Projects from './views/Projects';
-import '../src/assets/styles/styles.css';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
