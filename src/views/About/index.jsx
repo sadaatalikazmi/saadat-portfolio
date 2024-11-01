@@ -4,7 +4,7 @@ import TechStack from './TechStack';
 import Aboutcard from './AboutCard';
 import ToolStack from './ToolStack';
 import { Container, Row, Col } from 'react-bootstrap';
-import aboutImage from '../../assets/images/about.png';
+import aboutImage from '../../Assets/images/about.png';
 
 const About = () => {
   return (

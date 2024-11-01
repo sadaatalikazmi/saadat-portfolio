@@ -4,7 +4,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineDownload } from 'react-icons/ai';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import pdf from '../../assets/Syed_Saadat_Ali_Kazmi.pdf';
+import pdf from '../../Assets/Syed_Saadat_Ali_Kazmi.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import Typewritter from './Typewritter';
 import Introduction from './Introduction';
 import { Container, Row, Col } from 'react-bootstrap';
-import hiThereImage from '../../assets/images/hi_there.png';
+import hiThereImage from '../../Assets/images/hi_there.png';
 
 const Home = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
-import avatarImage from '../../assets/images/avatar.png';
+import avatarImage from '../../Assets/images/avatar.png';
 import { AiFillGithub, AiFillMail } from 'react-icons/ai';
 
 const Introduction = () => {

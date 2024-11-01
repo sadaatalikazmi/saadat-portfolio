@@ -1,6 +1,6 @@
 import Home from './views/Home';
 import About from './views/About';
-import './assets/styles/styles.css';
+import './Assets/styles/styles.css';
 import Resume from './views/Resume';
 import Projects from './views/Projects';
 import Loader from './components/Loader';

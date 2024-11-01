@@ -1,11 +1,11 @@
-import fitHitImage from '../../assets/images/fit_hit.png';
-import montroiImage from '../../assets/images/montroi.png';
-import courseAiImage from '../../assets/images/course_ai.png';
-import flower800Image from '../../assets/images/800_flower.png';
-import diligentsiaImage from '../../assets/images/diligentsia.png';
-import frangranceXImage from '../../assets/images/fragrance_x.png';
-import smartRecruitImage from '../../assets/images/smart_recruit.png';
-import wildflowerWellnessImage from '../../assets/images/wildflower_wellness.png';
+import fitHitImage from '../../Assets/images/fit_hit.png';
+import montroiImage from '../../Assets/images/montroi.png';
+import courseAiImage from '../../Assets/images/course_ai.png';
+import flower800Image from '../../Assets/images/800_flower.png';
+import diligentsiaImage from '../../Assets/images/diligentsia.png';
+import frangranceXImage from '../../Assets/images/fragrance_x.png';
+import smartRecruitImage from '../../Assets/images/smart_recruit.png';
+import wildflowerWellnessImage from '../../Assets/images/wildflower_wellness.png';
 
 const projectsList = [
     {

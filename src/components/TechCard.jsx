@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/techCardStyles.css';
+import '../Assets/styles/techCardStyles.css';
 
 const TechCard = ({ techName, techIcon }) => {
     return (
