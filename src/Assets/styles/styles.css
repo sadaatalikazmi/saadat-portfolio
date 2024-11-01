@@ -1,12 +1,4 @@
 html {
-  --section-background-color: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.582),
-      rgba(12, 8, 24, 0.904));
-
-  --image-gradient: linear-gradient(to bottom left,
-      rgba(17, 16, 16, 0.678),
-      rgba(12, 10, 22, 0.863));
-
   --primary-color: #2a8a92;
   --secondary-color: #68b8c1;
   --tertiary-color: #aad0d4;
@@ -21,24 +13,24 @@ button:focus {
   box-shadow: none !important;
 }
 
+
 /* --------- */
-/*  Preloader */
+/* Loader */
 /* --------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #0c0513;
-  background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+
+.loader {
+  width: 100vw;
+  height: 95vh;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#preloader-none {
-  opacity: 0;
+.spinner-border-xl {
+  width: 6rem !important;
+  height: 6rem !important;
+  border-width: 0.4em !important;
 }
 
 #no-scroll {
@@ -46,8 +38,9 @@ button:focus {
   height: 100vh;
 }
 
+
 /* --------- */
-/*Scrollbar   */
+/* Scrollbar */
 /* --------- */
 
 ::-webkit-scrollbar {
@@ -71,9 +64,11 @@ button:focus {
   border-radius: 12px;
 }
 
+
 /* --------- */
-/* Navbar Section  */
+/* Navbar */
 /* --------- */
+
 .sticky {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
@@ -215,19 +210,17 @@ button:focus {
   width: 100%;
 }
 
+
 /* --------- */
 /* Home section */
 /* --------- */
+
 .wave {
-  animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s;
-  /* Change to speed up or slow down */
-  animation-iteration-count: infinite;
-  /* Never stop waving :) */
-  transform-origin: 70% 70%;
-  /* Pivot around the bottom-left palm */
   display: inline-block;
+  animation-name: wave-animation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
 }
 
 @keyframes wave-animation {
@@ -295,6 +288,7 @@ button:focus {
 .heading {
   font-size: 2.4em !important;
   padding-left: 50px !important;
+  padding-bottom: 15px;
 }
 
 .heading-name {
@@ -304,6 +298,11 @@ button:focus {
 
 .main-name {
   color: var(--primary-color);
+}
+
+.typewriter {
+  padding: 50px;
+  text-align: left;
 }
 
 .Typewriter__wrapper {
@@ -375,8 +374,8 @@ button:focus {
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 60px !important;
+  height: 60px !important;
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
@@ -416,13 +415,19 @@ button:focus {
   padding-left: 15px;
 }
 
+.social-icon {
+  margin-top: 12px;
+}
+
 .icon-colour {
   color: var(--primary-color) !important;
 }
 
+
 /* --------- */
 /* Footer */
 /* --------- */
+
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
@@ -466,71 +471,6 @@ button:focus {
   color: #a588c0 !important;
 }
 
-/* --------- */
-/* Projects */
-/* --------- */
-.project-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-}
-
-.project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.project-card-view {
-  box-shadow: 0 4px 5px 3px var(--tertiary-color) !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px var(--secondary-color) !important;
-}
-
-.card-img-top {
-  padding: 20px !important;
-  opacity: 0.8 !important;
-  border-radius: 10px !important;
-}
-
-.blog-img {
-  padding: 0px !important;
-  opacity: 0.8 !important;
-  border-radius: 0px !important;
-}
-
-.btn-primary {
-  color: #fff !important;
-  background-color: var(--secondary-color) !important;
-  border-color: var(--secondary-color) !important;
-}
-
-.btn-primary:hover {
-  color: #fff !important;
-  background-color: var(--primary-color) !important;
-  border-color: var(--primary-color) !important;
-}
-
-.btn:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.project-heading {
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
-}
 
 /* --------- */
 /* About */
@@ -555,6 +495,12 @@ button:focus {
   margin-right: 50px;
 }
 
+.know-content-heading {
+  font-size: 2.1em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .about-img {
   padding-top: 60px;
   padding-bottom: 50px;
@@ -568,43 +514,19 @@ button:focus {
   }
 }
 
-.tech-icons {
-  color: var(--primary-color);
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid var(--secondary-color) !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px var(--tertiary-color) !important;
-  overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
-}
-
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
-}
-
-.tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid var(--secondary-color) !important;
-  box-shadow: 4px 5px 4px 3px var(--secondary-color) !important;
-}
-
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+.stack {
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .quote-card-view {
   border: none !important;
   background-color: transparent !important;
+}
+
+.github {
+  justify-content: center;
+  padding-bottom: 10px;
 }
 
 .about-activity {
@@ -613,6 +535,93 @@ button:focus {
   padding-left: 1px !important;
 }
 
+
+/* --------- */
+/* Projects */
+/* --------- */
+
+.project-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+}
+
+.projects-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-heading {
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  text-align: center;
+  padding-top: 10px !important;
+}
+
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px var(--tertiary-color) !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px var(--secondary-color) !important;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.card-img-top {
+  padding: 20px !important;
+  border-radius: 10px !important;
+}
+
+.project-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bolder !important;
+  margin-bottom: 15px !important;
+}
+
+.project-description {
+  text-align: justify;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -620,7 +629,7 @@ button:focus {
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 80px !important;
   background-color: var(--tertiary-color);
 }
 

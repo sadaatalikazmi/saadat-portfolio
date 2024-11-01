@@ -1,40 +1,35 @@
-import Particle from "../Particle";
-import Button from "react-bootstrap/Button";
-import { Container, Row } from "react-bootstrap";
-import { Document, Page, pdfjs } from "react-pdf";
-import React, { useState, useEffect } from "react";
-import { AiOutlineDownload } from "react-icons/ai";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import pdf from "../../Assets/Syed_Saadat_Ali_Kazmi.pdf";
+import Button from 'react-bootstrap/Button';
+import { Container, Row } from 'react-bootstrap';
+import { Document, Page, pdfjs } from 'react-pdf';
+import React, { useState, useEffect } from 'react';
+import { AiOutlineDownload } from 'react-icons/ai';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import pdf from '../../assets/Syed_Saadat_Ali_Kazmi.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-function Resume() {
+const Resume = () => {
   const [width, setWidth] = useState(1200);
   const [resumePages, setResumePages] = useState(null);
 
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
+  useEffect(() => setWidth(window.innerWidth), []);
 
   return (
     <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+      <Container fluid className='resume-section'>
+        <Row style={{ justifyContent: 'center', position: 'relative' }}>
           <Button
-            variant="primary"
+            variant='primary'
             href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
+            target='_blank'
+            style={{ maxWidth: '250px' }}
           >
             <AiOutlineDownload />
             &nbsp;Download
           </Button>
         </Row>
-
-        <Row className="resume">
+        <Row className='resume'>
           <Document
-            className="resume-document"
+            className='resume-document'
             file={pdf}
             onLoadSuccess={({ _pdfInfo }) => setResumePages(_pdfInfo?.numPages)}
           >
@@ -47,13 +42,12 @@ function Resume() {
             ))}
           </Document>
         </Row>
-
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row style={{ justifyContent: 'center', position: 'relative' }}>
           <Button
-            variant="primary"
+            variant='primary'
             href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
+            target='_blank'
+            style={{ maxWidth: '250px' }}
           >
             <AiOutlineDownload />
             &nbsp;Download
@@ -62,6 +56,6 @@ function Resume() {
       </Container>
     </div>
   );
-}
+};
 
 export default Resume;
