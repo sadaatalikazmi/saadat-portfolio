@@ -1,12 +1,24 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { SiPostgresql } from 'react-icons/si';
 import TechCard from '../../components/TechCard';
-import { DiJavascript1, DiReact, DiBootstrap, DiNodejs, DiDatabase, DiMongodb, DiMysql, DiGit, DiGithubBadge, DiCode, DiCss3, DiDigitalOcean, DiAws } from 'react-icons/di';
+import { SiSpring, SiSpringboot, SiApachekafka, SiPostgresql } from 'react-icons/si';
+import { DiJava, DiJavascript1, DiReact, DiBootstrap, DiNodejs, DiDatabase, DiMysql, DiMongodb, DiGit, DiCode, DiCss3 } from 'react-icons/di';
 
 const Techstack = () => {
   return (
     <Row className='stack'>
+      <Col xs={6} sm={4} md={3} lg={2} >
+        <TechCard techName='Java' techIcon={<DiJava />} />
+      </Col>
+      <Col xs={6} sm={4} md={3} lg={2} >
+        <TechCard techName='Spring' techIcon={<SiSpring />} />
+      </Col>
+      <Col xs={6} sm={4} md={3} lg={2} >
+        <TechCard techName='Spring Boot' techIcon={<SiSpringboot />} />
+      </Col>
+      <Col xs={6} sm={4} md={3} lg={2} >
+        <TechCard techName='Apache Kafka' techIcon={<SiApachekafka />} />
+      </Col>
       <Col xs={6} sm={4} md={3} lg={2} >
         <TechCard techName='Javascript' techIcon={<DiJavascript1 />} />
       </Col>
@@ -26,10 +38,10 @@ const Techstack = () => {
         <TechCard techName='Database' techIcon={<DiDatabase />} />
       </Col>
       <Col xs={6} sm={4} md={3} lg={2} >
-        <TechCard techName='MongoDB' techIcon={<DiMongodb />} />
+        <TechCard techName='MySQL' techIcon={<DiMysql />} />
       </Col>
       <Col xs={6} sm={4} md={3} lg={2} >
-        <TechCard techName='MySQL' techIcon={<DiMysql />} />
+        <TechCard techName='MongoDB' techIcon={<DiMongodb />} />
       </Col>
       <Col xs={6} sm={4} md={3} lg={2} >
         <TechCard techName='PostgreSQL' techIcon={<SiPostgresql />} />
@@ -38,16 +50,7 @@ const Techstack = () => {
         <TechCard techName='Git' techIcon={<DiGit />} />
       </Col>
       <Col xs={6} sm={4} md={3} lg={2} >
-        <TechCard techName='GitHub' techIcon={<DiGithubBadge />} />
-      </Col>
-      <Col xs={6} sm={4} md={3} lg={2} >
         <TechCard techName='Code' techIcon={<DiCode />} />
-      </Col>
-      <Col xs={6} sm={4} md={3} lg={2} >
-        <TechCard techName='AWS' techIcon={<DiAws />} />
-      </Col>
-      <Col xs={6} sm={4} md={3} lg={2} >
-        <TechCard techName='DigitalOcean' techIcon={<DiDigitalOcean />} />
       </Col>
     </Row>
   );

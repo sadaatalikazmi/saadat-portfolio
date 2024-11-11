@@ -15,15 +15,15 @@ const Introduction = () => {
               LET ME <span className='teal'> INTRODUCE </span> MYSELF
             </h1>
             <p className='home-about-body'>
-              With <b className='teal'>nearly a decade</b> in software development, I bring seasoned expertise in <b className='teal'>full-stack engineering</b>, blending innovation with proven technical skills.
+              Over <b className='teal'>9 years</b> of experience in designing and developing robust web applications using <b className='teal'>Java Spring (Core, MVC, Boot, Data JPA) and Apache Kafka</b> for backend services, and <b className='teal'>React JS</b> for building dynamic, responsive front-end interfaces, ensuring high-performance and seamless user experiences.
               <br />
-              Skilled in crafting seamless, <b className='teal'>interactive UIs</b> with <b className='teal'>React.js, Redux, React Query, CSS, MUI, and React Bootstrap</b> to deliver highly responsive and user-focused web applications.
+              Expertise in building <b className='teal'>interactive, user-centric React JS applications</b>, incorporating <b className='teal'>Redux</b> for state management, and using <b className='teal'>React Router</b> for client-side routing, while applying modern front-end frameworks like <b className='teal'>Material UI (MUI) and React Bootstrap</b> for visually appealing and accessible UIs.
               <br />
-              Proficient in <b className='teal'>Node.js and Express.js</b> to build scalable, efficient backend services and <b className='teal'>RESTful APIs</b>, ensuring robust performance and maintainability.
+              Proficient in working with <b className='teal'>SQL databases (Oracle, SQL Server) and NoSQL (MongoDB)</b>, utilizing <b className='teal'>Hibernate/JPA</b> for efficient ORM and data persistence, optimizing SQL queries, and developing complex stored procedures and triggers.
               <br />
-              Extensive experience with <b className='teal'>MongoDB and SQL</b>, structuring reliable, optimized data storage solutions for various application needs.
+              Experienced in managing code versions and collaborating with teams using <b className='teal'>Git/GitHub</b> and implementing <b className='teal'>Jenkins pipelines</b> for automated deployments, enabling smooth integration, testing, and version control practices.
               <br />
-              Deploying and managing applications on <b className='teal'>AWS, DigitalOcean, Jenkins, and GitHub</b>, with a focus on scalability, security, and seamless <b className='teal'>CI/CD workflows</b>.
+              Skilled in developing and deploying microservices using <b className='teal'>Spring Boot</b> and integrating them with <b className='teal'>AWS cloud environments</b>, leveraging <b className='teal'>Jenkins</b> for <b className='teal'>CI/CD pipelines</b> to automate and streamline the build, test, and deployment processes.
             </p>
           </Col>
           <Col md={4} className='myAvtar'>

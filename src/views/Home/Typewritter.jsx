@@ -6,7 +6,7 @@ const Typewritter = () => {
     <div className='typewriter'>
       <Typewriter
         options={{
-          strings: ['Full Stack Software Developer working on JavaScript, React JS, & Node JS'],
+          strings: ['Full Stack Software Developer working on Java, Spring Boot, JavaScript, React JS, Relational & Non-Relational Database'],
           autoStart: true,
           loop: true,
           delay: 5,
