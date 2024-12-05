@@ -15,7 +15,7 @@ const Introduction = () => {
               LET ME <span className='teal'> INTRODUCE </span> MYSELF
             </h1>
             <p className='home-about-body'>
-              Over <b className='teal'>9 years</b> of experience in designing and developing robust web applications using <b className='teal'>Java Spring (Core, MVC, Boot, Data JPA) and Apache Kafka</b> for backend services, and <b className='teal'>React JS</b> for building dynamic, responsive front-end interfaces, ensuring high-performance and seamless user experiences.
+              Over <b className='teal'>12 years</b> of experience in designing and developing robust web applications using <b className='teal'>Java Spring (Core, MVC, Boot, Data JPA) and Apache Kafka</b> for backend services, and <b className='teal'>React JS</b> for building dynamic, responsive front-end interfaces, ensuring high-performance and seamless user experiences.
               <br />
               Expertise in building <b className='teal'>interactive, user-centric React JS applications</b>, incorporating <b className='teal'>Redux</b> for state management, and using <b className='teal'>React Router</b> for client-side routing, while applying modern front-end frameworks like <b className='teal'>Material UI (MUI) and React Bootstrap</b> for visually appealing and accessible UIs.
               <br />
